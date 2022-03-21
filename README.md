@@ -32,3 +32,5 @@ time='2021年8月21日' #更新日期
 - `-gh` 是GitHub文件参数，去掉`https://github.com/`即可，请使用`?raw=true`代替raw域名
 - GitHub文件由开发者提供文件加速，无需担心速度问题
 - 非GitHub文件请上传到[Files文件夹](Files)，并查看[README.md](Files/README.md)
+- 大文件请使用`-url`参数，后面接下载地址。但使用此方式请确保下载地址长期有效且文件MD5值不得留空
+- 文件MD5与字节数为选填，但建议填上（不填MD5不会校验）
