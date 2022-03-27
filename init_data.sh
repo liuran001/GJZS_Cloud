@@ -1,6 +1,6 @@
-Configuration=2022032001
-Magisk_Warehouse_version=2022032001
-App_Store_version=2022032001
+Configuration=2022032701
+Magisk_Warehouse_version=2022032701
+App_Store_version=2022032701
 Show_Compatibility_Mode=1
 MIUI=0
 
@@ -22,11 +22,11 @@ time='2022年3月20日'
 io.github.vvb2060.magisk)
 apk='io.github.vvb2060.magisk'
 name='Magisk Alpha'
-version='cc6ca0bd-alpha'
-versionCode='24300'
+version='b1faa5ee-alpha'
+versionCode='24304'
 author='vvb2060'
 description='Alpha版Magisk Manager'
-time='2022年3月20日'
+time='2022年3月27日'
     [[ $Choice = 1 ]] && Download -gh 'vvb2060/magisk_files/blob/alpha/app-release.apk?raw=true' "$1.apk" '' '' "$1.apk"
 ;;
 
@@ -77,12 +77,12 @@ time='2022年3月20日'
 org.lsposed.manager)
 apk='org.lsposed.manager'
 name='LSPosed 模块管理器'
-version='v1.7.2'
-versionCode='6379'
+version='v1.8.0'
+versionCode='6482'
 author='LSPosed Developers'
 description='LSPosed Xposed框架模块管理器【这是管理器，模块请前往Magisk模块仓库安装】'
 apkfile="$PeiZhi_File/$apk-$versionCode.apk"
-time='2022年3月20日'
+time='2022年3月27日'
     if [[ $Choice = 1 ]]; then
         [[ $SDK -lt 27 ]] && abort "！$name-$version（$versionCode）不支持安卓8.1.0以下系统"
         if [[ ! -s "$apkfile" ]]; then
@@ -778,15 +778,15 @@ time='2021年8月15日'
 riru_lsposed)
 id='riru_lsposed'
 name='Riru - LSPosed'
-version='v1.7.2'
-versionCode='6379'
+version='v1.8.0'
+versionCode='6482'
 author='LSPosed Developers'
 description='一款基于Riru API开发的Xposed框架，支持运行在安卓8.1.0 ~ 13系统上。需要安装Riru v25.0.0或更高版本，Telegram: @LSPosed'
-time='2022年3月20日'
+time='2022年3月27日'
     if [[ $Choice = 1 ]]; then
         mask -v
         if [[ $MAGISK_VER_CODE -ge 23000 ]]; then
-             [[ $Choice = 1 ]] && Download -cos "LSPosed-v1.7.2-6379-riru-release.zip" "$1.zip" '' '' "$1.zip"
+             [[ $Choice = 1 ]] && Download -gh "LSPosed/LSPosed/releases/download/v1.8.0/LSPosed-v1.8.0-6482-riru-release.zip" "$1.zip" '' '' "$1.zip"
         else
             echo "- 检测到Magisk版本在v23以下，无法安装最新版$version（$versionCode），开始安装v1.3.4（5501）版本"
             Download -file "Modules/LSPosed/LSPosed-v1.3.4-5501-release.zip" "$1.zip" 2189720 de39ec10f67b538fbdc60b7f0e6520f7 "$1.zip"
@@ -797,15 +797,15 @@ time='2022年3月20日'
 zygisk_lsposed)
 id='zygisk_lsposed'
 name='Zygisk - LSPosed'
-version='v1.7.2'
-versionCode='6379'
+version='v1.8.0'
+versionCode='6482'
 author='LSPosed Developers'
 description='一款基于Zygisk API开发的Xposed框架，支持运行在安卓8.1.0 ~ 13系统上。需要Magisk开启Zygisk支持，Telegram: @LSPosed'
-time='2022年3月20日'
+time='2022年3月27日'
     if [[ $Choice = 1 ]]; then
         mask -v
         if [[ $MAGISK_VER_CODE -ge 24000 ]]; then
-             [[ $Choice = 1 ]] && Download -cos "LSPosed-v1.7.2-6379-zygisk-release.zip" "$1.zip" '' '' "$1.zip"
+             [[ $Choice = 1 ]] && Download -gh "LSPosed/LSPosed/releases/download/v1.8.0/LSPosed-v1.8.0-6482-zygisk-release.zip" "$1.zip" '' '' "$1.zip"
         else
             echo "- 检测到Magisk版本在v24以下，无法安装Zygisk版LSPosed，请更新Magisk或安装Riru版" 
         fi
