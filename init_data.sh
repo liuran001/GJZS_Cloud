@@ -1,5 +1,5 @@
-Configuration=2022032701
-Magisk_Warehouse_version=2022032701
+Configuration=2022040801
+Magisk_Warehouse_version=2022040801
 App_Store_version=2022032701
 Show_Compatibility_Mode=1
 MIUI=0
@@ -1473,7 +1473,7 @@ fi
 
 riru-sui)
 id='riru-sui'
-name='Sui'
+name='Riru - Sui'
 version='v12.6.1'
 versionCode=274
 author='RikkaApps'
@@ -1484,11 +1484,11 @@ time='2022年3月20日'
 
 zygisk-sui)
 id='zygisk-sui'
-name='Sui'
+name='Zygisk - Sui'
 version='v12.6.1'
 versionCode=274
 author='RikkaApps'
-description='现代超级用户接口的实现，与Shizuku的API设计相同。该模块需要Riru v25.0.0或以上版本。'
+description='现代超级用户接口的实现，与Shizuku的API设计相同。该模块需要Magisk v24.0或更高版本且开启Zygisk。'
 time='2022年3月20日'
     [[ $Choice = 1 ]] && Download -gh "RikkaApps/Sui/releases/download/v12.6.1/sui-zygisk-v12.6.1-release.zip" "$1.zip" '' '' "$1.zip"
 ;;
