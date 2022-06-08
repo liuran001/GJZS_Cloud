@@ -1,6 +1,6 @@
-Configuration=2022040801
-Magisk_Warehouse_version=2022040801
-App_Store_version=2022032701
+Configuration=2022060905
+Magisk_Warehouse_version=2022060905
+App_Store_version=2022060905
 Show_Compatibility_Mode=1
 MIUI=0
 
@@ -11,23 +11,23 @@ case "$1" in
 com.topjohnwu.magisk)
 apk='com.topjohnwu.magisk'
 name='Magisk'
-version='24.3'
-versionCode='24300'
+version='25.0'
+versionCode='25000'
 author='John Wu'
 description='原版 Magisk Manager'
-time='2022年3月20日'
-    [[ $Choice = 1 ]] && Download -gh 'topjohnwu/Magisk/releases/download/v24.3/Magisk-v24.3.apk' "$1.apk" '' '' "$1.apk"
+time='2022年6月9日'
+    [[ $Choice = 1 ]] && Download -file 'APK/Magisk/Magisk-v25.0.apk' "$1.apk" '11110603' 'eeb3f44c82ffac76944a5f82d24b76f1' "$1.apk"
 ;;
 
 io.github.vvb2060.magisk)
 apk='io.github.vvb2060.magisk'
 name='Magisk Alpha'
-version='b1faa5ee-alpha'
-versionCode='24304'
+version='e2f37535-alpha'
+versionCode='25001'
 author='vvb2060'
 description='Alpha版Magisk Manager'
-time='2022年3月27日'
-    [[ $Choice = 1 ]] && Download -gh 'vvb2060/magisk_files/blob/alpha/app-release.apk?raw=true' "$1.apk" '' '' "$1.apk"
+time='2022年6月9日'
+    [[ $Choice = 1 ]] && Download -file 'APK/Magisk/e2f37535-alpha.apk' "$1.apk" '11355429' '89f03e2931154ffb108d343d00c38d69' "$1.apk"
 ;;
 
 Han.automatic.rescue)
@@ -43,46 +43,46 @@ time='2021年9月12日'
 
 com.omarea.vtools)
 apk='com.omarea.vtools'
-name='Scene5 Beta'
-version='5.2.0_CN Beta4'
-versionCode=202203041
+name='Scene5'
+version='5.2.4'
+versionCode=202205101
 author='嘟嘟Ski'
 description='一个集高级重启、应用安装自动点击、CPU调频等多项功能于一体的工具箱。'
-time='2022年3月20日'
-    [[ $Choice = 1 ]] && Download -cos "Scene5.2.0_CNBeta4.apk" "$1.apk" '' '' "$1.apk"
+time='2022年6月9日'
+    [[ $Choice = 1 ]] && Download -url "https://api.qqcn.xyz/lz/?url=iQEjR04l007i&type=down" "$1.apk" '' '' "$1.apk"
 ;;
 
 bin.mt.plus)
 apk='bin.mt.plus'
 name='MT管理器'
-version='2.10.3'
-versionCode='22022063'
+version='2.11.1'
+versionCode='22060759'
 author='Bin'
 description='文件管理器/安卓逆向神器'
-time='2022年3月20日'
-    [[ $Choice = 1 ]] && Download -cos "MT2.10.3.apk" "$1.apk" '' '' "$1.apk"
+time='2022年6月9日'
+    [[ $Choice = 1 ]] && Download -url "https://api.qqcn.xyz/lz/?url=iYiwt060wzxc&type=down" "$1.apk" '' '' "$1.apk"
 ;;
 
 bin.mt.plus.canary)
 apk='bin.mt.plus.canary'
 name='MT管理器内测版'
-version='2.10.3-beta'
-versionCode='22022552'
+version='2.11.1-beta'
+versionCode='22060202'
 author='Bin'
 description='文件管理器/安卓逆向神器，此版本为内测版可与正式版共存，因为是内测版如果你在使用中发现bug，可向QQ：243454893提交反馈问题'
-time='2022年3月20日'
-    [[ $Choice = 1 ]] && Download -cos "MT-2.10.4-beta.apk" "$1.apk" '' '' "$1.apk"
+time='2022年6月9日'
+    [[ $Choice = 1 ]] && Download -url "https://api.qqcn.xyz/lz/?url=i0G6S060wywf&type=down" "$1.apk" '' '' "$1.apk"
 ;;
 
 org.lsposed.manager)
 apk='org.lsposed.manager'
 name='LSPosed 模块管理器'
-version='v1.8.0'
-versionCode='6482'
+version='v1.8.3'
+versionCode='6552'
 author='LSPosed Developers'
 description='LSPosed Xposed框架模块管理器【这是管理器，模块请前往Magisk模块仓库安装】'
 apkfile="$PeiZhi_File/$apk-$versionCode.apk"
-time='2022年3月27日'
+time='2022年6月9日'
     if [[ $Choice = 1 ]]; then
         [[ $SDK -lt 27 ]] && abort "！$name-$version（$versionCode）不支持安卓8.1.0以下系统"
         if [[ ! -s "$apkfile" ]]; then
@@ -130,12 +130,12 @@ time='2021年5月15日'
 statusbar.lyric)
 apk='statusbar.lyric'
 name='墨•状态栏歌词'
-version='4.4.3'
-versionCode='111'
+version='5.3.1'
+versionCode='161'
 author='Block Network'
 description='[Xposed] Status Bar Lyric / 状态栏歌词'
-time='2022年3月20日'
-    [[ $Choice = 1 ]] && Download -gh "Block-Network/StatusBarLyric/releases/download/4.4.3v111/StatusBarLyric-4.4.3.111.-release-signed.apk" "$1.apk" '' '' "$1.apk"
+time='2022年6月9日'
+    [[ $Choice = 1 ]] && Download -file "APK/StatusBarLyric/StatusBarLyric-5.3.1.161.-release-1654353210041-signed.apk" "$1.apk" '371875' 'f9fe5aaa1665cf578ffc2a1791b18b77' "$1.apk"
 ;;
 
 com.termux)
@@ -152,23 +152,23 @@ time='2022年3月20日'
 com.yxer.packageinstalles)
 apk='com.yxer.packageinstalles'
 name='R-安装组件'
-version='1.9.3-beta'
-versionCode='206'
+version='1.9.67-beta'
+versionCode='241'
 author='依心所言'
 description='或许是安装狮的替代品，支持安装APK/Magisk模块'
-time='2022年3月20日'
-    [[ $Choice = 1 ]] && Download -cos "R-Installer_v1.9.3-beta_206-r.apk" "$1.apk" '' '' "$1.apk"
+time='2022年6月9日'
+    [[ $Choice = 1 ]] && Download -file "APK/R-Installer/R_v1.9.67-beta_241-r.apk" "$1.apk" '1641722' '23a2d4f35a50adea4ae7e058c6699a3b' "$1.apk"
 ;;
 
 com.yxer.rpack.hook)
 apk='com.yxer.rpack.hook'
 name='R-安装组件-扩展'
-version='1.8.8'
-versionCode='15'
+version='1.9.8'
+versionCode='22'
 author='依心所言'
 description='R-安装组件的Xposed扩展'
-time='2022年1月24日'
-    [[ $Choice = 1 ]] && Download -cos "com.yxer.rpack.hook_v1.8.8.apk" "$1.apk" 166776 c596f83e2efdf7bb56934881561e3146 "$1.apk"
+time='2022年6月9日'
+    [[ $Choice = 1 ]] && Download -file "APK/R-Installer/R-hook_v1.9.8_22-r.apk" "$1.apk" 323300 9dfffd2dcf3ba24224765a79ab495f38 "$1.apk"
 ;;
 
 com.litiaotia.app)
@@ -207,12 +207,12 @@ time='2022年3月20日'
 org.telegram.messenger)
 apk='org.telegram.messenger'
 name='Telegram 电报'
-version='8.5.4'
-versionCode=25666
+version='8.7.4'
+versionCode=26366
 author='Telegram'
 description='Telegram是一款跨平台的即时通讯软件，需要科学上网，简体中文语言包：https://t.me/setlanguage/moecn （此为F-Droid下载的开源版本，包名与签名会和官网下载的不一致）'
-time='2022年3月20日'
-    [[ $Choice = 1 ]] && Download -url "https://mirrors.tuna.tsinghua.edu.cn/fdroid/repo/org.telegram.messenger_25666.apk" "$1.apk" '' '' "$1.apk"
+time='2022年6月9日'
+    [[ $Choice = 1 ]] && Download -url "https://mirrors.tuna.tsinghua.edu.cn/fdroid/repo/org.telegram.messenger_26366.apk" "$1.apk" '' '' "$1.apk"
 ;;
 
 com.su.assistant.pro)
@@ -778,15 +778,15 @@ time='2021年8月15日'
 riru_lsposed)
 id='riru_lsposed'
 name='Riru - LSPosed'
-version='v1.8.0'
-versionCode='6482'
+version='v1.8.3'
+versionCode='6552'
 author='LSPosed Developers'
 description='一款基于Riru API开发的Xposed框架，支持运行在安卓8.1.0 ~ 13系统上。需要安装Riru v25.0.0或更高版本，Telegram: @LSPosed'
-time='2022年3月27日'
+time='2022年6月9日'
     if [[ $Choice = 1 ]]; then
         mask -v
         if [[ $MAGISK_VER_CODE -ge 23000 ]]; then
-             [[ $Choice = 1 ]] && Download -gh "LSPosed/LSPosed/releases/download/v1.8.0/LSPosed-v1.8.0-6482-riru-release.zip" "$1.zip" '' '' "$1.zip"
+             [[ $Choice = 1 ]] && Download -file "Modules/LSPosed/LSPosed-v1.8.3-6552-riru-release.zip" "$1.zip" '2353735' 'fccb0513bcac0e868e49b2b09005db86' "$1.zip"
         else
             echo "- 检测到Magisk版本在v23以下，无法安装最新版$version（$versionCode），开始安装v1.3.4（5501）版本"
             Download -file "Modules/LSPosed/LSPosed-v1.3.4-5501-release.zip" "$1.zip" 2189720 de39ec10f67b538fbdc60b7f0e6520f7 "$1.zip"
@@ -797,15 +797,15 @@ time='2022年3月27日'
 zygisk_lsposed)
 id='zygisk_lsposed'
 name='Zygisk - LSPosed'
-version='v1.8.0'
-versionCode='6482'
+version='v1.8.3'
+versionCode='6552'
 author='LSPosed Developers'
 description='一款基于Zygisk API开发的Xposed框架，支持运行在安卓8.1.0 ~ 13系统上。需要Magisk开启Zygisk支持，Telegram: @LSPosed'
-time='2022年3月27日'
+time='2022年6月9日'
     if [[ $Choice = 1 ]]; then
         mask -v
         if [[ $MAGISK_VER_CODE -ge 24000 ]]; then
-             [[ $Choice = 1 ]] && Download -gh "LSPosed/LSPosed/releases/download/v1.8.0/LSPosed-v1.8.0-6482-zygisk-release.zip" "$1.zip" '' '' "$1.zip"
+             [[ $Choice = 1 ]] && Download -file "Modules/LSPosed/LSPosed-v1.8.3-6552-zygisk-release.zip" "$1.zip" '2357751' '51a8ad0d00426f5af7650fd5f9a005cc' "$1.zip"
         else
             echo "- 检测到Magisk版本在v24以下，无法安装Zygisk版LSPosed，请更新Magisk或安装Riru版" 
         fi
@@ -845,17 +845,6 @@ author='rovo89 & topjohnwu'
 description='打包的官方Xposed框架 by @topjohnwu，支持安卓 5-8.1'
 time='2021年3月24日'
     [[ $Choice = 1 ]] && Download -file "Modules/Xposed/xposed.zip" "$1.zip" 108675627 d083690c555fa59b5f29112fc1dbb0dc "$1.zip"
-;;
-
-uperf)
-id='uperf'
-name='Uperf（YC调度）'
-version='v2 (21.08.15)'
-versionCode='2'
-author='Matt Yang'
-description='一个Android用户态性能控制器，实现大部分内核态升频功能，并支持更多情景识别。'
-time='2021年8月21日'
-    [[ $Choice = 1 ]] && Download -gh "yc9559/uperf/releases/download/dev-21.08.15/uperf-dev-21.08.15.zip" "$1.zip" 2303704 dcf4993995e80ca60180c3d4b9694798 "$1.zip"
 ;;
 
 MIUI13.22)
