@@ -1,4 +1,4 @@
-Configuration=2022060905
+Configuration=2022070202
 Magisk_Warehouse_version=2022060905
 App_Store_version=2022060905
 Show_Compatibility_Mode=1
@@ -2030,7 +2030,7 @@ com.miui.miwallpaper.snowmountain)
 Install_Applet)
     name=Applet
     versionCode=81
-    Install_Applet2 -url "https://qqcn.coding.net/p/import-rt20/d/files/git/raw/master/Applet-81.zip" "$name.zip" 8341732 d0b98b504265f9766cd07c0762bfbf6a "$name" $versionCode
+    Install_Applet2 -cos "start/Applet-81.zip" "$name.zip" 8341732 d0b98b504265f9766cd07c0762bfbf6a "$name" $versionCode
 ;;
 
 binwalk)
@@ -2039,13 +2039,13 @@ binwalk)
 ;;
 
 Install_busybox)
-    name="busybox_$Type"
-    [[ $Type = arm ]] && Start_Install -url "https://qqcn.coding.net/p/import-rt20/d/files/git/raw/master/$name" "$name-selinux" 1452044 92a3d5c291124e5b8bd4d7b04c24362d "$name" 1.33.1 13310
-    [[ $Type = arm64 ]] && Start_Install -url "https://qqcn.coding.net/p/import-rt20/d/files/git/raw/master/$name" "$name-selinux" 2066520 2340fc8c0f18462fc0dffe9e591c5c01 "$name" 1.33.1 13310
-    [[ $Type = x86 ]] && Start_Install -url "https://qqcn.coding.net/p/import-rt20/d/files/git/raw/master/$name" "$name-selinux" 2094872 cd5fde5c345e711657709599f348e260 "$name" 1.33.1 13310
-    [[ $Type = x86_64 ]] && Start_Install -url "https://qqcn.coding.net/p/import-rt20/d/files/git/raw/master/$name" "$name-selinux" 2222408 195292917f4c3a3815ed352cac3bda99 "$name" 1.33.1 13310
-    [[ $Type = mips ]] && Start_Install -url "https://qqcn.coding.net/p/import-rt20/d/files/git/raw/master/$name" "$name" 1918732 7886ed84533e344c0ea0e87ff0578749 "$name" 1.33.1 13310
-    [[ $Type = mips64 ]] && Start_Install -url "https://qqcn.coding.net/p/import-rt20/d/files/git/raw/master/$name" "$name" 1939440 c8c7311463e2999af63540c51628364e "$name" 1.33.1 13310
+    name="busybox-$Type"
+    [[ $Type = arm ]] && Start_Install -cos "start/$name-selinux" "$name-selinux" 1460236 172294eda113c62a2eecd35472850ee0 "$name" 1.34.1 13412
+    [[ $Type = arm64 ]] && Start_Install -cos "start/$name-selinux" "$name-selinux" 2087000 d9ca92e7e180d203be629f463ffe8248 "$name" 1.34.1 13412
+    [[ $Type = x86 ]] && Start_Install -cos "start/$name-selinux" "$name-selinux" 2111256 802bd3cc68e2c9e7562e6bef3800d31b "$name" 1.34.1 13412
+    [[ $Type = x86_64 ]] && Start_Install -cos "start/$name-selinux" "$name-selinux" 2238792 61ab268e9a41ef06809c17dca82d4052 "$name" 1.34.1 13412
+    [[ $Type = mips ]] && Start_Install -cos "start/$name" "$name" 1918764 33a9ee5c1192b4d65bb0b00f7e75420e "$name" 1.34.1 13412
+    [[ $Type = mips64 ]] && Start_Install -cos "start/$name" "$name" 1951784 3ecdd5c91ed81d245a9637924f5f46c6 "$name" 1.34.1 13412
 ;;
 
 *)
