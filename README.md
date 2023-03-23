@@ -1,36 +1,36 @@
-# GJZS_Cloud
-搞机助手·R 云服务开源仓库  
+#GJZS_Cloud
+Engage Assistant·R Cloud Service Open Source Warehouse
 
-# 示例
-应用
+# example
+application
 ```shell
-com.topjohnwu.magisk) #唯一标识符，建议使用包名
-apk='com.topjohnwu.magisk' #包名
-name='Magisk' #应用名
-version='24.3' #版本号
+com.topjohnwu.magisk) #Unique identifier, it is recommended to use the package name
+apk='com.topjohnwu.magisk' #package name
+name='Magisk' #application name
+version='24.3' #version number
 versionCode='24300' #versionCode
-author='John Wu' #作者
-description='原版 Magisk Manager' #描述
-time='2022年3月20日' #更新日期
-    [[ $Choice = 1 ]] && Download -gh 'topjohnwu/Magisk/releases/download/v24.3/Magisk-v24.3.apk' "$1.apk" '文件字节数，可留空' '文件MD5，可留空' "$1.apk"
+author='John Wu' #author
+description='Original Magisk Manager' #Description
+time='March 20, 2022' #update date
+     [[ $Choice = 1 ]] && Download -gh 'topjohnwu/Magisk/releases/download/v24.3/Magisk-v24.3.apk' "$1.apk" 'Number of file bytes, can be left blank' 'File MD5, can be left blank' "$1.apk"
 ;;
 ```
-模块
+module
 ```shell
-uperf) #唯一标识符，建议和id保持一致
-id='uperf' #模块id
-name='Uperf（YC调度）' #模块名称
-version='v2 (21.08.15)' #模块版本
+uperf) #Unique identifier, it is recommended to be consistent with id
+id='uperf' #module id
+name='Uperf (YC scheduling)' #module name
+version='v2 (21.08.15)' #module version
 versionCode='2' #versionCode
-author='Matt Yang' #作者
-description='一个Android用户态性能控制器，实现大部分内核态升频功能，并支持更多情景识别。' #描述
-time='2021年8月21日' #更新日期
-    [[ $Choice = 1 ]] && Download -gh "yc9559/uperf/releases/download/dev-21.08.15/uperf-dev-21.08.15.zip" "$1.zip" 2303704 dcf4993995e80ca60180c3d4b9694798 "$1.zip"
+author='Matt Yang' #author
+description='An Android user mode performance controller, which realizes most of the kernel mode upscaling functions and supports more scene recognition. ' #describe
+time='August 21, 2021' #update date
+     [[ $Choice = 1 ]] && Download -gh "yc9559/uperf/releases/download/dev-21.08.15/uperf-dev-21.08.15.zip" "$1.zip" 2303704 dcf4993995e80ca60180c3d4b9694798 "$1.zip"
 ;;
 ```
 
-- `-gh` 是GitHub文件参数，去掉`https://github.com/`即可，请使用`?raw=true`代替raw域名
-- GitHub文件由开发者提供文件加速，无需担心速度问题
-- 非GitHub文件请上传到[Files文件夹](Files)，并查看[README.md](Files/README.md)
-- 大文件请使用`-url`参数，后面接下载地址。但使用此方式请确保下载地址长期有效且文件MD5值不得留空
-- 文件MD5与字节数为选填，但建议填上（不填MD5不会校验）
+- `-gh` is the GitHub file parameter, just remove `https://github.com/`, please use `?raw=true` instead of the raw domain name
+- GitHub files are accelerated by the developer, so you don't need to worry about speed
+- For non-GitHub files, please upload to [Files folder](Files), and check [README.md](Files/README.md)
+- For large files, please use the `-url` parameter, followed by the download address. But using this method, please ensure that the download address is valid for a long time and the MD5 value of the file cannot be left blank
+- File MD5 and the number of bytes are optional, but it is recommended to fill in (no MD5 will not be verified)
